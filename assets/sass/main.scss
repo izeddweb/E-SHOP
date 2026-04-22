@@ -1,28 +1,25 @@
 @use "abstracts/variables" as *;
+@use "base/reset" as * ;
+// @use "base/global";
+// @use "base/utilities";
+@use "layout/header" as *;
+// @use "layout/navbar";
+// @use "layout/footer";
+@use "base/global" as *;
+// @use "components/button";
+// @use "components/card";
+// @use "components/form";
+// @use "components/modal";
+// @use "components/section-title";
+// // @use "pages/home";
+// @use "pages/logging";
+@use "pagesstyle/shop" as *;
 
-@use "base/reset";
-@use "base/global";
-@use "base/utilities";
-
-@use "layout/header";
-@use "layout/navbar";
-@use "layout/footer";
-
-@use "components/button";
-@use "components/card";
-@use "components/form";
-@use "components/modal";
-@use "components/section-title";
-
-// @use "pages/home";
-@use "pages/logging";
-@use "pages/shop";
-
-
-h1 {
-  color: white;
-  background-color: $black;
-}
-body{
-    background-color: red;
+body {
+  // background-color: #0b99cc;
+  color: $black;
+  height: 120dvh;
+  &.black {
+    background-color: $black;
+  }
 }
