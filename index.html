@@ -5,80 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-ShOP</title>
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- cdn font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- link css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body class="white">
+<img class="white">
 
-    <!-- star header -->
-    <div class="header" id="header">
-        <div class="top-header">
-            <div class="top-header-content">
-                <p class="summer-sale">
-                    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-                    <a class="ShopNow" href="assets/pages/shop.html"> ShopNow</a>
-                </p>
-                <select name="language" id="select-language">
-                    <option value="english">English</option>
-                    <option value="french">French</option>
-                </select>
-            </div>
-        </div>
-        <div class="container">
-            <div class="bottom-header">
-                <div class="logo">
-                    <a href="#home">E-SHOP</a>
-                </div>
-                
-                <div class="navbar">
-                    <ul class="nav-list">
-                        <li class="items"><a class="active link" href="#home">Home</a></li>
-                        <li class="items"><a class="link" href="#contact">Contact</a></li>
-                        <li class="items"><a class="link" href="#about">About</a></li>
-                        <li class="items"><a class="link" href="#signup">Sign Up</a></li>
-                    </ul>
-                    
-                </div>
-                 
-                <div class="actions-navbar">
-                    <button class="toggle-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <div class="input-field">
-                        <input type="text" class="inputSearch" placeholder="Search...">
-                        <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <button class="cart">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <span class="count-cart">0</span>
-                    </button>
-                    <button class="heart">
-                        <i class="fa-solid fa-heart"></i>
-                        <span class="count-heart">0</span>
-                    </button>
-                    <button class="theme-switcher">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                </div>
-                <div class="scrool-width"></div>
-            </div>
+<!-- star header -->
+<div class="header" id="header">
+    <div class="top-header">
+        <div class="top-header-content">
+            <p class="summer-sale">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                <a class="ShopNow" href="assets/pages/shop.html"> ShopNow</a>
+            </p>
+            <select name="language" id="select-language">
+                <option value="english">English</option>
+                <option value="french">French</option>
+            </select>
         </div>
     </div>
-    <!-- end header -->
-     <!-- star main -->
-      <main class="main" id="main">
-        <section id="home" class="home">
-            <div class="container">
-                <div class="category-link"></div>
-                <div class="home content"></div>
+    <div class="container">
+        <div class="bottom-header">
+            <div class="logo">
+                <a href="#home">E-SHOP</a>
             </div>
-        </section>
-      </main>
-     <!-- end main -->
 
-</body>
+            <div class="navbar">
+                <ul class="nav-list">
+                    <li class="items"><a class="active link" href="#home">Home</a></li>
+                    <li class="items"><a class="link" href="#contact">Contact</a></li>
+                    <li class="items"><a class="link" href="#about">About</a></li>
+                    <li class="items"><a class="link" href="#signup">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+            <div class="actions-navbar">
+                <button class="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="input-field">
+                    <input type="text" id="inputSearch" class="inputSearch" placeholder="Search...">
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="count-cart">0</span>
+                </button>
+                <button class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="count-heart">0</span>
+                </button>
+                <button class="theme-switcher">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+            <div class="scrool-width"></div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+<!-- star main -->
+<main class="main" id="main">
+    <section id="home" class="home">
+        <div class="container ">
+            <div class="home-container">
+                <div class="category-links">
+                    <div class="category-links-head">
+                        <p class="category-title">Categories</p>
+                        <button class="btn-category">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="category-links-body">
+                        <ul class="category-list">
+                            <li class="category-item"><a href="#" class="category-link">Electronics</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Clothing</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Home & Kitchen</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Books</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Electronics</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Clothing</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Home & Kitchen</a></li>
+                            <li class="category-item"><a href="#" class="category-link">Books</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="home-content">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <swiper-slide>
+                                <img src="https://picsum.photos/id/234/1200/450" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="https://picsum.photos/id/233/1200/450" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="https://picsum.photos/id/232/1200/450" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="https://picsum.photos/id/231/1200/450" alt="">
+                            </swiper-slide>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- end main -->
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- main js -->
+<script src="assets/scripts/main.js"></script>
 
 </html>

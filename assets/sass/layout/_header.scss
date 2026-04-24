@@ -4,9 +4,11 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1000;
+  background-color: white;
 
   .top-header {
     width: 100%;
@@ -25,6 +27,8 @@
       .summer-sale {
         color: rgb(255, 255, 255);
         font-size: 14px;
+        height: 24px;
+        margin: 15px 0;
       }
       .ShopNow {
         color: $main-color;
@@ -56,6 +60,7 @@
         font-size: 24px;
         font-weight: bold;
         color: $text-color-black-2;
+        letter-spacing: 4px;
       }
     }
     .navbar {
@@ -112,7 +117,7 @@
         .inputSearch {
           height: 32px;
           width: 230px;
-          background-color: $text-color-white-2;
+          background-color: $text-color-grey;
           border-radius: $border-radius;
           &:focus {
             padding: 0 $padding-1;

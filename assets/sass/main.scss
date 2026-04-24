@@ -1,12 +1,12 @@
 @use "abstracts/variables" as *;
-@use "base/reset" as * ;
+@use "base/reset" as *;
 // @use "base/global";
 // @use "base/utilities";
 @use "layout/header" as *;
 // @use "layout/navbar";
 // @use "layout/footer";
 @use "base/global" as *;
-// @use "components/button";
+@use "components/button" as *;
 // @use "components/card";
 // @use "components/form";
 // @use "components/modal";
@@ -19,7 +19,107 @@ body {
   // background-color: #0b99cc;
   color: $black;
   height: 120dvh;
+  overflow-x: hidden;
   &.black {
     background-color: $black;
+  }
+}
+.home {
+  height: 450px;
+  width: 100%;
+  // background-color: rgb(158, 151, 151);
+  margin: 40px auto;
+  padding: 0 $padding-4;
+  .home-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 450px;
+
+    .category-links {
+      max-width: 20%;
+      width: 250px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .category-links-head {
+        transition: $transition;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 0 $padding-2;
+        .category-title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      .category-links-body {
+        height: 100%;
+        width: 100%;
+        .category-list {
+          display: flex;
+          flex-direction: column;
+          height: max-content;
+          width: 100%;
+          height: 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: $transition;
+          &.active{
+            height: max-content;
+            opacity: 1;
+            visibility: visible;
+          }
+          .category-item {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            padding: $padding-1 0;
+            transition: $transition;
+            .category-link{
+              background-color:$text-color-grey;
+            }
+          }
+        }
+      }
+    }
+    .home-content {
+      width: 80%;
+      height: 450px;
+      position: relative;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .swiper-pagination-bullet {
+          background-color: $main-color;
+          .active {
+            background-color: $main-color-sub;
+            width: 20px !important;
+            height: 10px !important;
+          }
+        }
+      }
+    }
   }
 }
