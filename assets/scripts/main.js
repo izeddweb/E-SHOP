@@ -18,12 +18,23 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // setup category links
-
 const btnCategory = document.querySelector('.btn-category')
 const listCategory = document.querySelector('.category-list')
 
-btnCategory.addEventListener('click',togller)
+btnCategory.addEventListener('click', () => toggler(listCategory))
 
-function togller(){
-  listCategory.classList.toggle('active')
+// setup menu toggler
+const toggleMenu = document.querySelector('.toggle-menu')
+const navlist = document.querySelector('.nav-list')
+
+toggleMenu.addEventListener('click', () => toggler(navlist))
+
+// setup search input
+const btnSearch = document.querySelector('.btn-search')
+const inputSearch = document.querySelector('.inputSearch')
+
+btnSearch.addEventListener('click', () => toggler(inputSearch))
+
+function toggler(ele) {
+  ele.classList.toggle('show')
 }

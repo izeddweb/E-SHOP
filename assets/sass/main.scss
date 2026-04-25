@@ -16,7 +16,7 @@
 @use "pagesstyle/shop" as *;
 
 body {
-  // background-color: #0b99cc;
+  position: relative;
   color: $black;
   height: 120dvh;
   overflow-x: hidden;
@@ -70,7 +70,7 @@ body {
           opacity: 0;
           visibility: hidden;
           transition: $transition;
-          &.active{
+          &.show{
             height: max-content;
             opacity: 1;
             visibility: visible;
