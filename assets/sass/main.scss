@@ -7,10 +7,11 @@
 // @use "layout/footer";
 @use "base/global" as *;
 @use "components/button" as *;
-// @use "components/card";
+@use "components/card" as *;
+@use "components/side-bar" as *;
 // @use "components/form";
-// @use "components/modal";
-// @use "components/section-title";
+@use "components/modal";
+@use "components/section-head";
 // // @use "pages/home";
 // @use "pages/logging";
 @use "pagesstyle/shop" as *;
@@ -18,11 +19,12 @@
 body {
   position: relative;
   color: $black;
-  height: 120dvh;
   overflow-x: hidden;
   &.black {
     background-color: $black;
   }
+  // star main
+  // star home section
 }
 .home {
   height: 450px;
@@ -80,10 +82,12 @@ body {
             font-size: 14px;
             font-weight: 400;
             padding: $padding-1 0;
+            margin: $padding-1 0;
             transition: $transition;
-            .category-link{
-              background-color:$text-color-grey;
-            }
+            background-color:$text-color-grey;
+            // .category-link{
+            //   background-color:$text-color-grey;
+            // }
           }
         }
       }
@@ -119,6 +123,40 @@ body {
             height: 10px !important;
           }
         }
+      }
+    }
+  }
+}
+// star discount section
+//
+.discount-to-day {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 140px 0;
+  .container {
+    .section-body {
+      height: max-content;
+      margin: $padding-section 0;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      .cards-products {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        height: 100%;
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+      }
+      .view-all-products{
+        width: 250px;
+        height: 50px;
+        margin: 60px 0 140px 0 ;
       }
     }
   }

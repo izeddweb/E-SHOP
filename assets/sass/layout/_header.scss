@@ -85,12 +85,13 @@
             font-size: 16px;
             transition: $transition;
             color: $text-color-black-2;
-            padding: $padding-1 $padding-2;
+            // padding: $padding-1 $padding-2;
             &:hover {
               color: $main-color;
             }
             &.active {
               color: $main-color;
+              border-bottom: 2px solid $main-color;
             }
           }
         }
@@ -122,7 +123,7 @@
           position: absolute;
           top: 100%;
           right: -50%;
-          transform: translate(50%,0);
+          transform: translate(50%, 0);
           height: 32px;
           width: 150px;
           background-color: $text-color-grey;
@@ -144,10 +145,10 @@
       }
       .theme-switcher,
       .heart,
-      .cart {
+      .shopping-cart {
         @extend .button;
         position: relative;
-        .count-cart,
+        .count-shopping-cart,
         .count-heart {
           position: absolute;
           top: -2px;
@@ -165,7 +166,7 @@
       }
       .theme-switcher,
       .heart i,
-      .cart i {
+      .shopping-cart i {
         font-size: 20px;
       }
     }
@@ -200,12 +201,12 @@
       gap: $padding-1;
       .toggle-menu {
         display: flex;
-        i{
+        i {
           font-size: 14px;
         }
       }
       .input-field {
-        .btn-search i{
+        .btn-search i {
           font-size: 14px;
         }
         .inputSearch {
@@ -214,10 +215,10 @@
           }
         }
       }
-      
+
       .theme-switcher i,
       .heart i,
-      .cart i {
+      .shopping-cart i {
         font-size: 14px;
       }
     }
@@ -229,7 +230,7 @@
         position: absolute;
         top: -220px;
         left: 0;
-        background-color: red;
+        background-color: $text-color-grey;
         width: 100%;
         &.show {
           top: 98px;
@@ -273,19 +274,18 @@
         position: absolute;
         left: 0;
         transform: translateY(-200%);
-        background-color: red;
-        // background-color: $text-color-grey;
+
+        background-color: $text-color-grey;
         padding: 150px;
         &.show {
           transform: translateY(8%);
         }
-        .items{
+        .items {
           margin: 2px;
           .link {
-          font-size: 14px;
-          border-bottom: 1px solid $main-color;
-          padding: $padding-1 $padding-3;
-          
+            font-size: 14px;
+
+            padding: $padding-1 $padding-3;
           }
         }
       }
@@ -295,7 +295,6 @@
 
 //  star media for laptop
 @media (max-width: 992px) {
- 
 }
 //  star media for destop
 @media (max-width: 1200px) {

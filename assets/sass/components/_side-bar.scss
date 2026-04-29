@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as * ;
+.side-bar {
+  background-color: $white;
+  position: fixed;
+  right: 0;
+  top: 142px;
+  bottom: 0;
+  min-width: 200px;
+  width: 400px;
+  height: 100vh;
+  z-index: 1211;
+  transform: translateX(100%);
+  transition: $transition;
+  &.show{
+    transform: translateX(0);
+  }
+}

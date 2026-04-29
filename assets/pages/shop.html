@@ -22,7 +22,7 @@
                 <div class="summer-sale">
                     <p class="summer-sale-details">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
                     </p>
-                    <a class="ShopNow" href="assets/pages/shop.html"> ShopNow</a>
+                    
                 </div>
                 <select name="language" id="select-language">
                     <option value="english">English</option>
@@ -33,12 +33,12 @@
         <div class="container">
             <div class="bottom-header">
                 <div class="logo">
-                    <a href="#home">E-SHOP</a>
+                    <a href="/index.html">E-SHOP</a>
                 </div>
 
                 <div class="navbar">
                     <ul class="nav-list">
-                        <li class="items"><a class="active link" href="#home">Home</a></li>
+                        <li class="items"><a class="active link" href="/index.html">Home</a></li>
                         <li class="items"><a class="link" href="#contact">Contact</a></li>
                         <li class="items"><a class="link" href="#signup">Sign Up</a></li>
                     </ul>
@@ -53,9 +53,9 @@
                         <input type="text" class="inputSearch" placeholder="Search...">
                         <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <button class="cart">
+                    <button class="shopping-cart">
                         <i class="fa-solid fa-cart-plus"></i>
-                        <span class="count-cart">0</span>
+                        <span class="count-shopping-cart">0</span>
                     </button>
                     <button class="heart">
                         <i class="fa-solid fa-heart"></i>
@@ -71,10 +71,15 @@
     </div>
     <!-- end header -->
     <main>
-        <h1>from shop page</h1>
+        <div class="side-bar active">
+            <div class="wish-list">wish-list</div>
+            <div class="added-list">added-list</div>
+        </div>
+        <div class="modal"></div>
     </main>
 
 
+    <script type="module" src="/assets/scripts/main.js"></script>
 </body>
 
 </html>

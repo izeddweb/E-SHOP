@@ -7,5 +7,13 @@ button {
   justify-content: center;
   align-items: center;
   background-color: $text-color-grey;
-  
+  transition: $transition;
+  border-radius: $border-radius;
+  &:hover {
+    background-color: $main-color;
+    letter-spacing: 2px;
+  }
+  &.hovered {
+    background-color: $main-color;
+  }
 }

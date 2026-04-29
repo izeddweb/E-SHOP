@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+//  to handel if user click to see icon eyes
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: $overlay;
+    z-index: 22;
+    &.show{
+        display: flex;
+    }
+}

@@ -1,0 +1,67 @@
+@use "../abstracts/variables.scss" as *;
+
+.section-head {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .section-head-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    span {
+      display: block;
+      height: 40px;
+      width: 20px;
+      border-radius: $border-radius;
+      background-color: $main-color;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .section-head-content {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .counter-discount {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: $padding-3;
+      .counter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: stretch;
+        width: max-content;
+        padding: 0 $padding-1;
+        justify-content: space-between;
+        .body-counter {
+          font-weight: bold;
+          font-size: 25px;
+        }
+      }
+    }
+    .navigation-section {
+      height: 50px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: $padding-2;
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+}
