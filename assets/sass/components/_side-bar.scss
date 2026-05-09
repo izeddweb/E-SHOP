@@ -1,6 +1,7 @@
-@use "../abstracts/variables" as * ;
+@use "../abstracts/variables" as *;
 .side-bar {
-  background-color: $white;
+  // background-color: $text-color-grey;
+  
   position: fixed;
   right: 0;
   top: 142px;
@@ -11,7 +12,113 @@
   z-index: 1211;
   transform: translateX(100%);
   transition: $transition;
-  &.show{
+  display: flex;
+  flex-direction: column;
+  gap: $padding-2;
+  &.show {
     transform: translateX(0);
+  }
+  .wish-list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 5px;
+    span {
+      display: block;
+      height: 40px;
+      width: 20px;
+      border-radius: $border-radius;
+      background-color: $main-color;
+    }
+    .wish-title {
+      width: max-content;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #wish-count-items {
+      height: 32px;
+      width: 32px;
+      padding: 0 $padding-1;
+    }
+  }
+
+  .added-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 4px;
+    height: 100%;
+    .added-list-title {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      span {
+        display: block;
+        height: 40px;
+        width: 20px;
+        border-radius: $border-radius;
+        background-color: $main-color;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .list-products {
+      display: flex;
+      flex-direction: column;
+      gap: $padding-1;
+      .items {
+        // background-color: $white;
+        padding: $padding-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $border-radius;
+        .item-details {
+          gap: $padding-3;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .controls {
+          display: flex;
+          align-items: center;
+          gap: $padding-1;
+          .quantity {
+            display: flex;
+            align-items: center;
+            gap: $padding-1;
+            input {
+              display: flex;
+              align-items: center;
+              height: 32px;
+              width: 32px;
+              padding-left: $padding-1;
+              border-radius: $border-radius;
+            }
+          }
+        }
+      }
+    }
+    .total {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      span {
+        width: max-content;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid red;
+        padding: 0 $padding-1;
+        border-radius: $border-radius;
+      }
+    }
   }
 }

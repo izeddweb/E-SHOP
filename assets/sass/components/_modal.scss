@@ -1,13 +1,151 @@
 @use "../abstracts/variables" as *;
 
 //  to handel if user click to see icon eyes
-.modal{
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: $overlay;
-    z-index: 22;
-    &.show{
-        display: flex;
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1122;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content {
+    background-color: $body-light;
+    border-radius: $border-radius;
+    width: 90%;
+    max-width: 800px; // Plus élégant que 70%
+    height: auto;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+  }
+
+  .modal-card {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
     }
+    .btn-close-modal{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  // Badge de remise
+  .modal-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  // Partie Image
+  .modal-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img-card {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  // Partie Texte
+  .modal-body {
+    flex: 1.2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .modal-category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .modal-title {
+      font-size: 2rem;
+      margin: 10px 0;
+      text-transform: capitalize;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .modal-pricing {
+      margin: 15px 0;
+      .price-new {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $main-color;
+      }
+      .price-old {
+        margin-left: 10px;
+        text-decoration: line-through;
+      }
+    }
+
+    .modal-rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: #f59e0b; // Couleur or pour les étoiles
+      .count {
+        font-size: 0.9rem;
+      }
+    }
+    .modal-discription {
+      font-size: 1rem;
+      text-transform: capitalize;
+      font-weight: 800;
+      letter-spacing: 1px;
+      gap: 10px;
+      margin-bottom: 20px;
+      span{
+        text-transform: uppercase;
+        font-size: 0.75rem;
+      }
+    }
+
+    .modal-inventory {
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      .stock-value {
+        font-weight: bold;
+      }
+    }
+      .btn-buy {
+        background-color: $main-color;
+        width: max-content;
+        padding: 0 $padding-2;
+      }
+  }
 }

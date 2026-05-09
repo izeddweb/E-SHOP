@@ -1,6 +1,3 @@
-
-
-
 // setup menu toggler
 const toggleMenu = document.querySelector(".toggle-menu");
 const navlist = document.querySelector(".nav-list");
@@ -22,14 +19,19 @@ const btnShopping = document.querySelector(".shopping-cart");
 const btnHeart = document.querySelector(".heart");
 const sidePar = document.querySelector(".side-bar");
 
-btnHeart.addEventListener('click',() => toggler(sidePar))
-btnShopping.addEventListener('click',() => toggler(sidePar))
+btnHeart.addEventListener("click", () => toggler(sidePar));
+btnShopping.addEventListener("click", () => toggler(sidePar));
+
+
+
+
 
 if (btnCategory && listCategory) {
   btnCategory.addEventListener("click", () => toggler(listCategory));
 }
 
 export function toggler(ele) {
+  console.log(ele);
   if (ele) {
     ele.classList.toggle("show");
   }
@@ -47,3 +49,10 @@ links.forEach((link) => {
   });
 });
 
+//  toggle theme
+const body = document.querySelector("body");
+const themeSwitcher = document.querySelector(".theme-switcher");
+const containerBG = document.querySelector(".bg");
+themeSwitcher.addEventListener("click", (e) => {
+  body.classList.toggle("dark");
+});

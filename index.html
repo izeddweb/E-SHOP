@@ -17,7 +17,7 @@
 
 
     <!-- star header -->
-    <div class="header" id="header">
+    <header class="header" id="header">
         <div class="top-header">
             <div class="top-header-content">
                 <div class="summer-sale">
@@ -46,44 +46,64 @@
                     </ul>
                 </nav>
                 <div class="actions-navbar">
-                    <button class="toggle-menu">
+                    <button class=" bg toggle-menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="input-field">
-                        <input type="text" id="inputSearch" class="inputSearch " placeholder="Search...">
-                        <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" id="inputSearch" class="inputSearch bg" placeholder="Search...">
+                        <button class="btn-search bg "><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <button class="shopping-cart">
+                    <button class="shopping-cart bg ">
                         <i class="fa-solid fa-cart-plus"></i>
                         <span class="count-shopping-cart">0</span>
                     </button>
-                    <button class="heart">
+                    <button class="heart bg ">
                         <i class="fa-solid fa-heart"></i>
                         <span class="count-heart">0</span>
                     </button>
-                    <button class="theme-switcher">
+                    <button class="theme-switcher bg ">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                 </div>
-                <div class="scrool-width"></div>
+                
             </div>
         </div>
-    </div>
+        <div class="scrool-width"></div>
+    </header>
     <!-- end header -->
     <!-- star main -->
     <main class="main" id="main">
-        <div class="side-bar active">
-            <div class="wish-list">wish-list</div>
-            <div class="added-list">added-list</div>
+        <div class="side-bar">
+            <div class="wish-list">
+                <span></span>
+                <p class="wish-title">Wish-List :</p>
+                <input type="number" id="wish-count-items" value="0" readonly> items
+            </div>
+            <div class="line"></div>
+            <div class="added-list">
+                <div class="added-list-title">
+                    <span></span>
+                    <p class="title">Order Review :</p>
+                </div>
+                <div class="list-products"></div>
+                <div class="line"></div>
+                <div class="total">
+                    <span class="countItems">3 items</span>
+                    <span class="total-prices">0.000 $</span>
+                    <button class="btn check-out">check out</button>
+                </div>
+            </div>
         </div>
-        <div class="modal"></div>
+        <div class="modal">
+            <!-- injected by js -->
+        </div>
         <section id="home" class="home">
-            <div class="container ">
+            <div class="container bg">
                 <div class="home-container">
                     <div class="category-links">
                         <div class="category-links-head">
                             <p class="category-title">Categories</p>
-                            <button class="btn-category">
+                            <button class="btn-category bg">
                                 <i class="fa-solid fa-bars"></i>
                             </button>
                         </div>
@@ -127,7 +147,7 @@
             </div>
         </section>
         <section class="discount-to-day" id="discountToDay">
-            <div class="container">
+            <div class="container bg">
                 <div class="section-head">
                     <div class="section-head-title">
                         <span></span>
@@ -180,6 +200,7 @@
 
 
 
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="assets/scripts/swipper.js"></script>
@@ -191,3 +212,4 @@
 </body>
 
 </html>
+

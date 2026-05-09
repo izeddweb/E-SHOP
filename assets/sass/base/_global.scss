@@ -1,17 +1,20 @@
-.container{
-    width: 80%;
-    margin: 0 auto;
+@use "../abstracts/variables" as *;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
-.full-container{
-    width: 100%;
-    margin: 0 auto;
+.full-container {
+  width: 100%;
+  margin: 0 auto;
 }
-main{
+main {
   min-height: 100vh;
   width: 100vw;
   margin-top: 175px;
 }
-section{
+section {
   height: 100vh;
   width: 100vw;
 }
+

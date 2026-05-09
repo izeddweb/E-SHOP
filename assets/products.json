@@ -9,7 +9,8 @@
     "new_price": 50.99,
     "stars": 4.5,
     "rate": 120,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Écouteurs sans fil avec réduction de bruit active intégrée."
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "new_price": 103.99,
     "stars": 4.2,
     "rate": 85,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Suivez votre santé et vos notifications en temps réel."
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "new_price": 80.99,
     "stars": 4.7,
     "rate": 210,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Clavier mécanique rétroéclairé pour une frappe ultra rapide."
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "new_price": 34.99,
     "stars": 4.6,
     "rate": 145,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Souris ergonomique avec capteur optique haute précision ajustable."
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "new_price": 29.99,
     "stars": 4.3,
     "rate": 75,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Sac robuste et imperméable pour ordinateurs jusqu'à 15 pouces."
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "new_price": 47.99,
     "stars": 4.8,
     "rate": 320,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Enceinte Bluetooth compacte offrant un son puissant et clair."
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "new_price": 169.99,
     "stars": 4.9,
     "rate": 410,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Casque premium pour une immersion sonore totale et confortable."
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "new_price": 61.74,
     "stars": 4.4,
     "rate": 180,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Stockage externe fiable pour sauvegarder tous vos fichiers importants."
   },
   {
     "id": 9,
@@ -105,7 +113,8 @@
     "new_price": 27.99,
     "stars": 4.5,
     "rate": 290,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Chargeur portable haute capacité pour tous vos appareils mobiles."
   },
   {
     "id": 10,
@@ -117,7 +126,8 @@
     "new_price": 26.99,
     "stars": 4.1,
     "rate": 65,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Lampe de bureau LED design avec intensité lumineuse réglable."
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
     "new_price": 7.49,
     "stars": 4.0,
     "rate": 110,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Support universel stable idéal pour vos appels vidéo mains-libres."
   },
   {
     "id": 12,
@@ -141,7 +152,8 @@
     "new_price": 38.24,
     "stars": 4.4,
     "rate": 95,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Adaptateur multifonction pour connecter tous vos périphériques USB-C."
   },
   {
     "id": 13,
@@ -153,7 +165,8 @@
     "new_price": 49.49,
     "stars": 4.2,
     "rate": 130,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Surveillez votre domicile à distance en haute définition 24h/24."
   },
   {
     "id": 14,
@@ -165,7 +178,8 @@
     "new_price": 14.99,
     "stars": 4.6,
     "rate": 175,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Surface optimisée pour une glisse fluide et précise."
   },
   {
     "id": 15,
@@ -177,7 +191,8 @@
     "new_price": 17.49,
     "stars": 4.5,
     "rate": 240,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Clé USB 3.0 compacte pour transferts de données ultra-rapides."
   },
   {
     "id": 16,
@@ -189,7 +204,8 @@
     "new_price": 17.59,
     "stars": 4.3,
     "rate": 88,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Trépied léger et ajustable pour des photos toujours stables."
   },
   {
     "id": 17,
@@ -201,7 +217,8 @@
     "new_price": 33.99,
     "stars": 4.7,
     "rate": 150,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Bloc secteur puissant pour une recharge ultra-rapide en sécurité."
   },
   {
     "id": 18,
@@ -213,7 +230,8 @@
     "new_price": 14.39,
     "stars": 4.1,
     "rate": 60,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Contrôlez l'éclairage de votre maison directement depuis votre smartphone."
   },
   {
     "id": 19,
@@ -225,7 +243,8 @@
     "new_price": 26.99,
     "stars": 4.4,
     "rate": 105,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Projecteur LED compact idéal pour vos soirées cinéma maison."
   },
   {
     "id": 20,
@@ -237,7 +256,8 @@
     "new_price": 34.99,
     "stars": 4.5,
     "rate": 140,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Balance intelligente connectée pour suivre précisément votre évolution corporelle."
   },
   {
     "id": 21,
@@ -249,7 +269,8 @@
     "new_price": 55.99,
     "stars": 4.6,
     "rate": 92,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Microphone haute fidélité parfait pour le streaming et podcasts."
   },
   {
     "id": 22,
@@ -261,7 +282,8 @@
     "new_price": 39.09,
     "stars": 4.2,
     "rate": 115,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Caméra Full HD assurant une image nette en visioconférence."
   },
   {
     "id": 23,
@@ -273,7 +295,8 @@
     "new_price": 7.79,
     "stars": 4.7,
     "rate": 205,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Câble HDMI haute vitesse compatible 4K pour image parfaite."
   },
   {
     "id": 24,
@@ -285,7 +308,8 @@
     "new_price": 31.49,
     "stars": 4.3,
     "rate": 70,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Refroidissement efficace et silencieux pour votre boîtier d'ordinateur."
   },
   {
     "id": 25,
@@ -297,7 +321,8 @@
     "new_price": 23.99,
     "stars": 4.0,
     "rate": 135,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Étendez facilement la portée de votre connexion internet domestique."
   },
   {
     "id": 26,
@@ -309,7 +334,8 @@
     "new_price": 16.99,
     "stars": 4.4,
     "rate": 80,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Prise intelligente pour piloter vos appareils électriques par smartphone."
   },
   {
     "id": 27,
@@ -321,7 +347,8 @@
     "new_price": 50.99,
     "stars": 4.5,
     "rate": 165,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Manette ergonomique sans fil compatible avec PC et consoles."
   },
   {
     "id": 28,
@@ -333,7 +360,8 @@
     "new_price": 19.49,
     "stars": 4.6,
     "rate": 142,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Support ventilé ajustable pour améliorer votre posture au travail."
   },
   {
     "id": 29,
@@ -345,7 +373,8 @@
     "new_price": 11.19,
     "stars": 4.1,
     "rate": 50,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Petit aspirateur à main puissant pour nettoyer votre clavier."
   },
   {
     "id": 30,
@@ -357,6 +386,7 @@
     "new_price": 39.99,
     "stars": 4.4,
     "rate": 98,
-    "image": "https://picsum.photos"
+    "image": "https://picsum.photos",
+    "description": "Station de recharge élégante pour tous vos appareils sans fil."
   }
 ]
