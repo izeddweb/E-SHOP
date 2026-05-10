@@ -17,4 +17,16 @@ section {
   height: 100vh;
   width: 100vw;
 }
-
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  main {
+  margin-top: 135px;
+}
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}

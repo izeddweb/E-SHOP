@@ -14,11 +14,10 @@
     height: 48px;
     background-color: $body-dark;
 
-    .top-header-content {
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
       height: 48px;
       margin: auto;
       padding: $padding-3 0;
@@ -57,20 +56,17 @@
     height: 70px;
     align-items: flex-end;
     padding-bottom: 3px;
-    // align-items: center;
-    // height: 38px;
-    // margin-top: 40px;
-    // margin-bottom: $padding-3;
     background-color: transparent;
     backdrop-filter: blur(8px);
 
     .logo {
       width: 120px;
       a {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 26px;
+        font-weight: bolder;
         color: $main-color;
         letter-spacing: 4px;
+         font-family: "Intel One Mono", monospace;
       }
     }
     .navbar {
@@ -107,7 +103,6 @@
         background-color: transparent;
         i {
           font-size: 20px;
-          // color: $text-color-black-2;
         }
       }
       .button {
@@ -128,7 +123,6 @@
           transform: translate(50%, 0);
           height: 32px;
           width: 150px;
-          // background-color: $text-color-grey;
           border-radius: $border-radius;
           transition: $transition;
           &.show {
@@ -172,34 +166,29 @@
         font-size: 20px;
       }
     }
-   
   }
-   .scrool-width {
-      width: 100%;
-      height: 2px;
-      background-color: $main-color;
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      z-index: -1;
-    }
+  .scrool-width {
+    width: 100%;
+    height: 2px;
+    background-color: $main-color;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 //  star media for mobile
 @media (max-width: 576px) {
-  // header
   .header .top-header {
     height: 40px;
-    .top-header-content {
-      padding: 0 $padding-1;
+    .container {
       .summer-sale-details {
         display: none;
       }
     }
   }
-
   .header .container {
-    width: 100%;
     .actions-navbar {
       gap: $padding-1;
       .toggle-menu {
@@ -226,14 +215,13 @@
       }
     }
     .bottom-header {
-      margin: 10px 0;
+      height: 45px;
       .navbar .nav-list {
         flex-direction: column;
         align-items: center;
         position: absolute;
         top: -220px;
         left: 0;
-        // background-color: $text-color-grey;
         width: 100%;
         &.show {
           top: 98px;
@@ -251,15 +239,13 @@
 //  star media for tablette
 @media (min-width: 577px) and (max-width: 768px) {
   // header
-  .header .top-header .top-header-content {
-    padding: 0 $padding-1;
+  .header .top-header .container {
     .summer-sale-details {
       display: none;
     }
   }
   .header {
     .container {
-      width: 95%;
       .actions-navbar {
         gap: $padding-1;
         .toggle-menu {
@@ -277,8 +263,6 @@
         position: absolute;
         left: 0;
         transform: translateY(-200%);
-
-        // background-color: $text-color-grey;
         padding: 150px;
         &.show {
           transform: translateY(8%);
@@ -287,7 +271,6 @@
           margin: 2px;
           .link {
             font-size: 14px;
-
             padding: $padding-1 $padding-3;
           }
         }

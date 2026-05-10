@@ -1,17 +1,17 @@
 [
-  {
-    "id": 1,
-    "title": "Écouteurs",
-    "category": "Audio",
-    "stock": 45,
-    "old_price": 59.99,
-    "remise_pourcentage": 15,
-    "new_price": 50.99,
-    "stars": 4.5,
-    "rate": 120,
-    "image": "https://picsum.photos",
-    "description": "Écouteurs sans fil avec réduction de bruit active intégrée."
-  },
+ {
+  "id": 1,
+  "title": "Écouteurs",
+  "category": "Audio",
+  "stock": 45,
+  "old_price": 59.99,
+  "remise_pourcentage": 15,
+  "new_price": 50.99,
+  "stars": 4.5,
+  "rate": 120,
+  "image": "https://picsum.photos",
+  "description": "Écouteurs sans fil avec réduction de bruit active intégrée."
+},
   {
     "id": 2,
     "title": "Montre Connectée",
@@ -22,7 +22,7 @@
     "new_price": 103.99,
     "stars": 4.2,
     "rate": 85,
-    "image": "https://picsum.photos",
+    "image": "https://picsum.photos/id/13",
     "description": "Suivez votre santé et vos notifications en temps réel."
   },
   {

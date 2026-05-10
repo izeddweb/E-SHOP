@@ -25,6 +25,7 @@
     p {
       font-size: 20px;
       font-weight: bold;
+      letter-spacing: 2px;
     }
   }
   .section-head-content {
@@ -33,6 +34,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  flex-wrap: wrap;
+
     .counter-discount {
       height: 50px;
       display: flex;

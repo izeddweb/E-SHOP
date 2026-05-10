@@ -74,13 +74,17 @@ function displayCardUI(products) {
 
     if (e.target.closest(".btn-heart")) {
       e.target.classList.toggle("active");
-
       setFavorite(products);
       const wishListCount = document.getElementById("wish-count-items");
       let favorites = JSON.parse(localStorage.getItem("favorites"));
       wishListCount.setAttribute("value", favorites.length);
     }
-    generateProductModal(products);
+    const btnModal = document.querySelector(".btn-eye");
+    const modal = document.querySelector(".modal");
+    if (e.target.closest(".btn-eye")) {
+      modal.classList.toggle("show");
+      generateProductModal(products);
+    }
   });
 }
 
@@ -215,51 +219,51 @@ function generateProductModal(data) {
   modalContent.id = `modal-${data.id}`;
   modalContent.innerHTML = "";
   modalContent.innerHTML = `
-    <div class="modal-card">
-      <div class="modal-badge">${data.remise_pourcentage}%</div>
+  <div class="modal-card">
       <button class="btn btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
-      <div class="modal-image">
-        <img src="https://picsum.photos/id/${data.id}/270/250" class="img-card" alt="${data.title}">
+      <div class="modal-badge">
+          <div class="modal-image">
+            <img src="https://picsum.photos/id/${data.id}/270/250"  style="width: 100%; height: 100%;" class="img-card" alt="${data.title}">
+          </div>
+          <div class="modal-discount">${data.remise_pourcentage}%</div>
+         
       </div>
       <div class="modal-body">
-        <span class="modal-category"> category :${data.category}</span>
-        <h2 class="modal-title">${data.title}</h2>
-        <div class="modal-pricing">
-          <span class="price-new">${data.new_price}$</span>
-          <span class="price-old">${data.old_price}$</span>
-        </div>
-        <div class="modal-discription">
-          <span>discription :</span>
-          <p class="discription">${data.description} </p>
-        </div>
-        <div class="modal-rating">
-          <span class="stars">${data.stars}</span>
-          <span class="count">(${data.rate} avis)</span>
-        </div>
-        <div class="modal-inventory">
-          Stock : <span class="stock-value">${data.stock}</span>
-        </div>
-        <div class="modal-actions">
-          <button class="btn btn-buy">Acheter</button>
-        </div>
+          <div class="modal-category">
+              <span> category :</span>
+              <p class="modal-category">${data.category}</p>
+          </div>
+          <h2 class="modal-title">${data.title}</h2>
+          <div class="modal-pricing">
+              <span class="price-new">${data.new_price} $</span>
+              <span class="price-old">${data.old_price} $</span>
+          </div>
+          <div class="modal-description">
+              <span>description :</span>
+              <p class="description">${data.description} </p>
+          </div>
+          <div class="modal-rating">
+              <span class="stars">${data.stars}</span>
+              <span class="count">(${data.rate} avis)</span>
+          </div>
+
+          <div class="modal-inventory">
+              <span class="stock-value">Stock : </span>
+              <p class="stock-value">${data.stock}</p>
+          </div>
+          <button class="btn btn-buy">Buy Now</button>
       </div>
-    </div>
+  </div>
   `;
   // Injection dans le body
   modal.append(modalContent);
-  const btnModal = document.querySelector(".btn-eye");
-
-  if (btnModal && modal) {
-    modal.classList.toggle("show");
-    document.addEventListener("click", (e) => {
-      if (
-        e.target.parentNode.classList.contains("btn-close-modal") ||
-        e.target.classList.contains("modal")
-      ) {
-        modal.classList.remove("show");
-        modalContent.remove()
-      }
-    });
-  }
-  console.log(modalContent);
+  document.addEventListener("click", (e) => {
+    if (
+      e.target.parentNode.classList.contains("btn-close-modal") ||
+      e.target.classList.contains("modal")
+    ) {
+      modal.classList.remove("show");
+      modalContent.remove();
+    }
+  });
 }

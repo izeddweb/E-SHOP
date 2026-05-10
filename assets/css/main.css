@@ -54,35 +54,34 @@ i.active {
   height: 48px;
   background-color: #171717;
 }
-.header .top-header .top-header-content {
+.header .top-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
   height: 48px;
   margin: auto;
   padding: 16px 0;
   z-index: 1;
 }
-.header .top-header .top-header-content .summer-sale {
+.header .top-header .container .summer-sale {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 24px;
   margin: 15px 0;
 }
-.header .top-header .top-header-content .summer-sale .summer-sale-details {
+.header .top-header .container .summer-sale .summer-sale-details {
   color: rgb(255, 255, 255);
   font-size: 14px;
   margin: 15px 0;
 }
-.header .top-header .top-header-content .summer-sale .ShopNow {
+.header .top-header .container .summer-sale .ShopNow {
   color: #f150d3;
   font-size: 14px;
   text-decoration: underline;
   padding-left: 8px;
 }
-.header .top-header .top-header-content #select-language {
+.header .top-header .container #select-language {
   color: rgb(255, 255, 255);
   padding: 4px;
   background-color: transparent;
@@ -101,10 +100,11 @@ i.active {
   width: 120px;
 }
 .header .bottom-header .logo a {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: bolder;
   color: #f150d3;
   letter-spacing: 4px;
+  font-family: "Intel One Mono", monospace;
 }
 .header .bottom-header .navbar {
   width: -moz-max-content;
@@ -219,14 +219,8 @@ i.active {
   .header .top-header {
     height: 40px;
   }
-  .header .top-header .top-header-content {
-    padding: 0 4px;
-  }
-  .header .top-header .top-header-content .summer-sale-details {
+  .header .top-header .container .summer-sale-details {
     display: none;
-  }
-  .header .container {
-    width: 100%;
   }
   .header .container .actions-navbar {
     gap: 4px;
@@ -249,7 +243,7 @@ i.active {
     font-size: 14px;
   }
   .header .container .bottom-header {
-    margin: 10px 0;
+    height: 45px;
   }
   .header .container .bottom-header .navbar .nav-list {
     flex-direction: column;
@@ -269,14 +263,8 @@ i.active {
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .header .top-header .top-header-content {
-    padding: 0 4px;
-  }
-  .header .top-header .top-header-content .summer-sale-details {
+  .header .top-header .container .summer-sale-details {
     display: none;
-  }
-  .header .container {
-    width: 95%;
   }
   .header .container .actions-navbar {
     gap: 4px;
@@ -306,6 +294,52 @@ i.active {
     padding: 4px 16px;
   }
 }
+.section-services {
+  height: calc(100vh - 140px);
+}
+.section-services .services-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 40px 10px;
+}
+.section-services .services-content .service {
+  width: 30%;
+  min-width: 250px;
+  height: 320px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+.section-services .services-content .service .icones {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  border: 20px solid #f150d3;
+  margin: 40px 0;
+}
+.section-services .services-content .service .icones:hover {
+  border: 10px solid #f150d3;
+}
+.section-services .services-content .service p {
+  margin: 40px auto 8px;
+}
+.section-services .services-content .service .services-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -327,6 +361,19 @@ section {
   width: 100vw;
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  main {
+    margin-top: 135px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 button {
   height: 32px;
   width: 32px;
@@ -361,6 +408,11 @@ button.btn-delete:hover {
 }
 button.btn-delete:hover i {
   color: red;
+}
+
+.btn-buy {
+  width: 80px;
+  padding: 4px 8px;
 }
 
 .card {
@@ -587,116 +639,89 @@ button.btn-delete:hover i {
   border-radius: 4px;
   width: 90%;
   max-width: 800px;
-  height: auto;
+  height: 500px;
   max-height: 90vh;
   overflow: hidden;
-  position: relative;
   display: flex;
+  padding: 10px;
 }
 .modal .modal-card {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-}
-@media (max-width: 600px) {
-  .modal .modal-card {
-    flex-direction: column;
-  }
+  gap: 10px;
+  position: relative;
 }
 .modal .modal-card .btn-close-modal {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  top: 0;
+  right: 0;
+  background-color: #f150d3;
+  border-radius: 4px;
 }
-.modal .modal-badge {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: red;
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-weight: bold;
-  z-index: 10;
+.modal .modal-card .modal-badge {
+  width: 60%;
+  height: 100%;
 }
-.modal .modal-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.modal .modal-image .img-card {
+.modal .modal-card .modal-badge .modal-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
+  overflow: hidden;
 }
-.modal .modal-body {
-  flex: 1.2;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.modal .modal-card .modal-badge .modal-image img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
 }
-.modal .modal-body .modal-category {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-.modal .modal-body .modal-title {
-  font-size: 2rem;
-  margin: 10px 0;
-  text-transform: capitalize;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-.modal .modal-body .modal-pricing {
-  margin: 15px 0;
-}
-.modal .modal-body .modal-pricing .price-new {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f150d3;
-}
-.modal .modal-body .modal-pricing .price-old {
-  margin-left: 10px;
-  text-decoration: line-through;
-}
-.modal .modal-body .modal-rating {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  color: #f59e0b;
-}
-.modal .modal-body .modal-rating .count {
-  font-size: 0.9rem;
-}
-.modal .modal-body .modal-discription {
-  font-size: 1rem;
-  text-transform: capitalize;
-  font-weight: 800;
-  letter-spacing: 1px;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.modal .modal-body .modal-discription span {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-}
-.modal .modal-body .modal-inventory {
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-}
-.modal .modal-body .modal-inventory .stock-value {
-  font-weight: bold;
-}
-.modal .modal-body .btn-buy {
-  background-color: #f150d3;
+.modal .modal-card .modal-badge .modal-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: -moz-max-content;
+  height: max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 0 8px;
+  background-color: #f150d3;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.modal .modal-card .modal-body {
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal .modal-card .modal-body .modal-inventory,
+.modal .modal-card .modal-body .modal-rating,
+.modal .modal-card .modal-body .modal-pricing,
+.modal .modal-card .modal-body .modal-category {
+  display: flex;
+  gap: 20px;
+}
+.modal .modal-card .modal-body span {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.modal .modal-card .modal-body .modal-description {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.modal .modal-card .modal-body .modal-description .description {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.modal .modal-card .modal-body .modal-pricing .price-new {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f150d3;
+}
+.modal .modal-card .modal-body .modal-pricing .price-old {
+  font-weight: 800;
+  text-decoration: line-through;
 }
 
 .section-head {
@@ -725,6 +750,7 @@ button.btn-delete:hover i {
 .section-head .section-head-title p {
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 .section-head .section-head-content {
   width: 100%;
@@ -733,6 +759,7 @@ button.btn-delete:hover i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section-head .section-head-content .counter-discount {
   height: 50px;
@@ -772,6 +799,10 @@ h1 {
   background-color: rgb(166, 214, 22);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   position: relative;
   background: #ffffff;
@@ -801,7 +832,6 @@ body.dark .bg {
 .home .home-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
   width: 100%;
   height: 450px;
 }
