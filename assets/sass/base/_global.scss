@@ -13,8 +13,15 @@ main {
   width: 100vw;
   margin-top: 175px;
 }
+footer{
+  height: 400px;
+}
+ strong{
+    font-weight: bold;
+    color: $main-color;
+  }
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 @media (max-width: 576px) {

@@ -42,3 +42,8 @@ button {
   width: 80px;
   padding: 4px $padding-2;
 }
+ .btn-submit[type="submit"] {
+    box-shadow: $box-shadow;
+    width: max-content;
+    padding: $padding-1 $padding-2;
+  }

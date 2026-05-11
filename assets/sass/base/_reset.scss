@@ -22,6 +22,12 @@ select {
   cursor: pointer;
   border-radius: $border-radius;
 }
+input {
+  height: 32px;
+  width: 150px;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
 i {
   display: inline-block;
   font-size: 20px;

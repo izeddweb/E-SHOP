@@ -4,7 +4,7 @@
 @use "layout/header" as *;
 @use "layout/services" as *;
 // @use "layout/navbar";
-// @use "layout/footer";
+@use "layout/footer" as *;
 @use "base/global" as *;
 @use "components/button" as *;
 @use "components/card" as *;
@@ -24,6 +24,7 @@ body {
   color: $body-dark;
   overflow-x: hidden;
   transition: $transition;
+  height: max-content;
   .bg {
     background-color: $container-light;
     padding: $padding-2;
